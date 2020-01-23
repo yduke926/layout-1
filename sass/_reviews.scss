@@ -1,0 +1,19 @@
+.reviews {
+    background-color: #fff;
+    grid-column: full-start / full-end;
+    display: grid;
+    grid-template-columns: .86fr [center-start]repeat(3, [col-start] 1fr [col-end])[center-end] .86fr;
+
+    text-align: center;
+
+    &__stats {
+        grid-column: center-start / col-end 1;
+        background-color: orangered;
+
+    }
+
+    &__content {
+        grid-column: col-start 2 / center-end;
+        background-color: palegoldenrod;
+    }
+}

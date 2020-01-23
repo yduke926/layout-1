@@ -1,0 +1,16 @@
+.image-slider {
+    background-color: #32353A;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), #020202d0), url("/img/pillowcloseup.jpg") no-repeat center;
+    background-size: cover;
+    grid-column: full-start / full-end;
+    display: grid;
+    grid-template-columns: .86fr [center-start]repeat(3, [col-start] 1fr [col-end])[center-end] .86fr;
+
+
+    &__container {
+        grid-column: center-start / center-end;
+        background-color: rgba(255, 68, 0, 0.548);
+        height: 100%;
+    }
+
+}

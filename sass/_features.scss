@@ -1,0 +1,14 @@
+.features {
+    background-color: #fff;
+    grid-column: full-start / full-end;
+    display: grid;
+    grid-template-columns: .86fr [center-start]repeat(3, [col-start] 1fr [col-end])[center-end] .86fr;
+
+
+    &__container {
+        grid-column: center-start / center-end;
+        background-color: orangered;
+        height: 100%;
+    }
+
+}

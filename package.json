@@ -1,0 +1,17 @@
+{
+  "name": "hotel",
+  "version": "1.0.0",
+  "description": "Landing Page for Swaggy Hotel",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "Yanique Duke",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1 --browser=firefox"
+  }
+}

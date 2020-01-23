@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 30vw repeat(5, min-content);
+  grid-template-columns: [full-start] minmax(15%, 1fr) [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] minmax(15%, 1fr) [full-end]; }
+  .container > * {
+    text-align: center;
+    padding: 40px;
+    font-size: 3rem; }
+
+.header {
+  background-color: #32353A;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.01) 0%, #020024 90%), url(/img/bathroom.jpg);
+  background-size: cover;
+  background-position: 50% 70%;
+  background-repeat: repeat;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: 0.86fr [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 0.86fr; }
+  .header__container {
+    grid-column: center-start / center-end;
+    background-color: rgba(255, 68, 0, 0.219);
+    height: 100%; }
+
+.features {
+  background-color: #fff;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: 0.86fr [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 0.86fr; }
+  .features__container {
+    grid-column: center-start / center-end;
+    background-color: orangered;
+    height: 100%; }
+
+.image-slider {
+  background-color: #32353A;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), #020202d0), url("/img/pillowcloseup.jpg") no-repeat center;
+  background-size: cover;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: 0.86fr [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 0.86fr; }
+  .image-slider__container {
+    grid-column: center-start / center-end;
+    background-color: rgba(255, 68, 0, 0.548);
+    height: 100%; }
+
+.gallery {
+  background-color: #fff;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: [full-start] 0.86fr [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 0.86fr [full-end];
+  grid-template-rows: repeat(4, minmax(min-content, 1fr)); }
+  .gallery__container {
+    grid-column: center-start / center-end;
+    background-color: orangered;
+    height: 100%; }
+  .gallery__images {
+    grid-column: 1 / -1;
+    grid-row: 2 / span 3;
+    background-color: #32353A;
+    color: #fff; }
+
+.cta {
+  background-color: #32353A;
+  grid-column: full-start / full-end; }
+
+.reviews {
+  background-color: #fff;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: 0.86fr [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 0.86fr;
+  text-align: center; }
+  .reviews__stats {
+    grid-column: center-start / col-end 1;
+    background-color: orangered; }
+  .reviews__content {
+    grid-column: col-start 2 / center-end;
+    background-color: palegoldenrod; }
+
+.quote {
+  background-color: rgba(50, 53, 58, 0.5);
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), #020202d0), url("/img/Morroccanvibesoutdoor.jpg") no-repeat center;
+  background-size: cover;
+  grid-column: full-start / full-end;
+  color: #fff; }
+
+.footer {
+  background-color: #32353A;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: 0.86fr [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 0.86fr; }
+  .footer__container {
+    grid-column: center-start / center-end;
+    background-color: orangered;
+    height: 100%; }
